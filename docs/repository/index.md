@@ -103,7 +103,7 @@ component versions, upgraded dependencies and new images.
 
     If you have automated deployments, which is recommended for a production installation,
     this process
-    [can also be automated](../deployment/automation.md#automated-synchronisation-of-upstream-changes).
+    [can also be automated](../deployment/automation.md#automated-upgrades).
 
 To upgrade your Azimuth configuration to a new release, use the following steps to create
 a new branch containing the upgrade:

@@ -102,7 +102,7 @@ environments. The `ansible-playbook` command should **never** be executed manual
 
 The recommended approach is to automatically deploy an independent `aio` environment for each
 feature branch, also known as
-[per-branch dynamic review environments](deployment/automation/#per-branch-dynamic-review-environments).
+[per-branch dynamic review environments](deployment/automation.md#per-branch-dynamic-review-environments).
 This allows changes to be validated before they are merged to `main`.
 
 Once a change is merged to `main`, it will be deployed automatically to the `staging` environment.

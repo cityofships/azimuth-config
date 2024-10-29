@@ -149,7 +149,7 @@ clouds:
 ## Generating and executing tests
 
 Before tests can be generated and executed for an [environment](../environments.md), the
-environment must be successfully deployed either [manually](../) or by
+environment must be successfully deployed either [manually](./index.md) or by
 [automation](./automation.md).
 
 You must also have the Python dependencies installed on the machine that the tests will be

@@ -16,7 +16,7 @@ environments, although deployments to production typically include a manual appr
 !!! tip  "Using a site mixin"
 
     To get the maximum benefit from automated deployments and the
-    [feature branch workflow](../repository/index.md#making-changes-to-your-environment),
+    [feature branch workflow](../repository/index.md#making-changes-to-your-configuration),
     you should try to minimise the differences between the production, staging and
     [dynamic review](#per-branch-dynamic-review-environments) environments.
 

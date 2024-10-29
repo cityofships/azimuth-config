@@ -16,7 +16,7 @@ conflict with or break things for others.
 
 Azimuth supports using a single [configuration environment](../environments.md) to deploy multiple
 independent Azimuth instances. When
-[activating an environment](../deployment/#activating-an-environment), a unique instance name
+[activating an environment](../deployment/index.md#activating-an-environment), a unique instance name
 can be given as a second argument to the `activate` script, e.g.:
 
 ```bash

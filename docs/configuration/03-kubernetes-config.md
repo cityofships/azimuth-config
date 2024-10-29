@@ -95,7 +95,7 @@ to use volume-backed instances instead.
 !!! tip  "etcd on a separate block device"
 
     If you only have a limited amount of SSD or, even better, local disk, available,
-    consider placing [etcd on a separate block device](#etcd-block-device) to make
+    consider placing [etcd on a separate block device](#etcd-configuration) to make
     best use of the limited capacity.
 
 To configure Kubernetes clusters to use volume-backed instances (i.e. use a Cinder
