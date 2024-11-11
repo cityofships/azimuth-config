@@ -206,9 +206,28 @@ For more information on Blazar, and how to add hosts into
 Blazar's control, please see:
 https://docs.openstack.org/blazar/latest/cli/flavor-based-instance-reservation.html
 
-### Coral Credits and Blazar external enforement
+### Coral Credits and Blazar Enforement Plugins
 
-TODO.
+Blazar has an enforcement plugin that is able to
+call out to an external service to decide if a reservation
+is allowed:
+https://docs.openstack.org/blazar/latest/admin/usage-enforcement.html#externalservicefilter
+
+There is a new open source service that implements this API,
+called Coral Credits:
+https://github.com/stackhpc/coral-credits
+
+Coral credits can be deployed via Azimuth config,
+by setting this:
+```yaml  title="environments/my-site/inventory/group_vars/all/variables.yml"
+coral_credits_enabled: yes
+```
+
+Details on how to configure OpenStack Blazar to contact
+the Coral credits service deployed above, and how to
+configure the credits assigned to each OpenStack project
+are detailed in here:
+https://github.com/stackhpc/coral-credits/blob/main/README.md#blazar-configuration
 
 ### Azimuth configuration
 
