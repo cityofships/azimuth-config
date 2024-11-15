@@ -17,7 +17,7 @@ nav:
       - configuration/01-prerequisites.md
       - configuration/02-deployment-method.md
       - configuration/03-kubernetes-config.md
-      - 'Target Cloud':
+      - 'Target OpenStack cloud':
           - configuration/04-target-cloud/index.md
           - configuration/04-target-cloud/01-openstack-blazar.md
           - configuration/04-target-cloud/02-openstack-manila.md
