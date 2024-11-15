@@ -39,12 +39,12 @@ tenancy and make that available to platforms.
 
 !!! warning  "Resizing of shares is not supported"
 
-    If you increase the share size, new shares will be created at the new size but existing
-    shares **will not** be resized.
+    If you increase the share size in your Azimuth configuration, new shares will be created at
+    the new size but existing shares **will not** be resized.
 
     Existing shares can be resized manually using the OpenStack CLI or Horizon dashboard.
 
-Platforms will receive the following Ansible variables that they can use to configure the share:
+Ansible-based platforms will receive the following variables that can be use to configure the share:
 
 ```yaml
 cluster_project_manila_share: true
@@ -59,7 +59,7 @@ cluster_project_manila_share_user: "proj-<project_id>"
 ## Storage network automation
 
 In order to access a Manila share, platforms need to be able to route to the storage service that
-is providing the share. This often requires an additional network to be connected to the machines
+is providing the share. This often requires an additional network to be attached to the machines
 that make up a platform.
 
 Azimuth has the ability to detect and attach an additional network that is used for connecting

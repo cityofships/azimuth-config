@@ -40,9 +40,9 @@ the corresponding resources from its pool of hosts.
 
 Azimuth does not currently support the host reservation or instance reservation plugins.
 
-There is active work on the Blazar flavor plugin to improve the support for VMs with GPUs attached,
-and to allow bare-metal nodes, using [Ironic](https://docs.openstack.org/ironic/latest/), to be
-added as possible flavor reservation targets.
+There is active work on the Blazar flavor plugin to improve the support for VMs with GPUs
+attached, and to allow [Ironic](https://docs.openstack.org/ironic/latest/) bare-metal nodes
+to be added as possible flavor reservation targets.
 
 Currently, Azimuth only supports the case where all projects are able to access all configured
 Nova flavors via Blazar.
@@ -67,14 +67,14 @@ Coral Credits can be deployed as part of an Azimuth installation using the follo
 coral_credits_enabled: yes
 ```
 
-Details on how to configure OpenStack Blazar to use Coral Credits as an enforcement plugin,
-and how to configure the credits assigned to each OpenStack project, are detailed in the
+For Details on how to configure Blazar to use Coral Credits as an enforcement plugin, and how
+to configure the credit allocations for each OpenStack project, see the
 [Coral Credits documentation](https://github.com/stackhpc/coral-credits/blob/main/README.md#blazar-configuration).
 
 ## Azimuth configuration
 
-To enable support for "time-limited" platforms in Azimuth, i.e. platforms that are automatically
-deleted at a specified time in the future, set the following variable:
+To enable "time-limited" platforms in Azimuth, i.e. platforms that are automatically deleted
+at a specified time in the future, set the following variable:
 
 ```yaml  title="environments/my-site/inventory/group_vars/all/variables.yml"
 azimuth_scheduling_enabled: true
